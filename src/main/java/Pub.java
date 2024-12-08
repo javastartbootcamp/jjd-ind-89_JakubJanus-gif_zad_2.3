@@ -4,19 +4,29 @@ public class Pub {
         drink.name = "Kamikaze";
         drink.price = 25.78;
         drink.alcohol = true;
-        drink.liquid = "wódka";
-        drink.juice = "sok z limonki";
-        drink.liqueur = "likier pomarańczowy";
 
-        Ingredients ingredient = new Ingredients();
-        ingredient.liquidAmount = 50;
-        ingredient.juiceAmount = 15;
-        ingredient.liqueurAmount = 30;
+        Ingredient ingredient1 = new Ingredient();
+        ingredient1.ingredientName = "wódka";
+        ingredient1.ingredientAmount = 50; //ml
+
+        drink.typeOfalcohol=ingredient1;
+
+        Ingredient ingredient2 = new Ingredient();
+        ingredient2.ingredientName = "sok z limonki";
+        ingredient2.ingredientAmount = 30; //ml
+
+        drink.typeOfjuice=ingredient2;
+
+        Ingredient ingredient3 = new Ingredient();
+        ingredient3.ingredientName = "likier pomarańczowy";
+        ingredient3.ingredientAmount = 15; //ml
+
+        drink.flavoredLiqueur=ingredient3;
 
         System.out.println("Drink: " + drink.name);
-        System.out.println("Price: " + drink.price);
+        System.out.println("Price: " + drink.price + "zł");
         System.out.println("Czy zawiera alkohol? " + drink.alcohol);
-        System.out.println("Składniki: \n" + drink.liquid + "\n" + drink.juice + "\n" + drink.liqueur);
-        System.out.println("Pojemność: " + (ingredient.liquidAmount + ingredient.juiceAmount + ingredient.liqueurAmount) + "ml");
+        System.out.println("Składniki: \n" + ingredient1.ingredientName + "\n" + ingredient2.ingredientName + "\n" + ingredient3.ingredientName);
+        System.out.println("Pojemność: " + (ingredient1.ingredientAmount + ingredient2.ingredientAmount + ingredient3.ingredientAmount) + "ml");
     }
 }
