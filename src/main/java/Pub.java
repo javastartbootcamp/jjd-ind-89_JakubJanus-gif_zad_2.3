@@ -9,19 +9,19 @@ public class Pub {
         ingredient1.ingredientName = "wódka";
         ingredient1.ingredientAmount = 50; //ml
 
-        drink.typeOfalcohol=ingredient1;
+        drink.typeOfalcohol = ingredient1;
 
         Ingredient ingredient2 = new Ingredient();
         ingredient2.ingredientName = "sok z limonki";
         ingredient2.ingredientAmount = 30; //ml
 
-        drink.typeOfjuice=ingredient2;
+        drink.typeOfjuice = ingredient2;
 
         Ingredient ingredient3 = new Ingredient();
         ingredient3.ingredientName = "likier pomarańczowy";
         ingredient3.ingredientAmount = 15; //ml
 
-        drink.flavoredLiqueur=ingredient3;
+        drink.flavoredLiqueur = ingredient3;
 
         System.out.println("Drink: " + drink.name);
         System.out.println("Price: " + drink.price + "zł");
